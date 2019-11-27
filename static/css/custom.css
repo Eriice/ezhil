@@ -2,20 +2,16 @@ body {
   font-family: "Source Code Pro",
   "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "MicrosoftYaHei", "WenQuanYi Micro Hei", sans-serif;
 
-  background: 
-    linear-gradient(to left, 
-    violet,
-    indigo,
-    blue,
-    green,
-    yellow,
-    orange,
-    red
-    ) repeat-x left;
+  background: linear-gradient(to left, violet,indigo,blue,green,yellow,orange,red ) repeat-x left;
 	background-size: 100% 0.4rem;
   background-position: 0 0;
 
   color: #616161;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Source Code Pro",
+  "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "MicrosoftYaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 .container {
@@ -60,13 +56,14 @@ body {
     color: #ccc;
 }
 
-.post .title {
-  font-size: 1.2rem;
-}
-
 .footer {
   padding: 10px 0;
   text-align: left;
+}
+
+.posts .post .title {
+  font-size: 1.2rem;
+  color: #069;
 }
 
 .post .title {
