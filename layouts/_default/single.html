@@ -7,7 +7,7 @@
 
 		<div class="post-header">
 			<h1 class="title">{{ .Title }}</h1>
-			<div class="meta">Posted at &mdash; {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
+			<div class="meta">发布于 {{ dateFormat "2006-01-02" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
 		</div>
 
 		<div class="markdown">
@@ -41,7 +41,7 @@
 		{{- end -}}
 
 		{{- if eq ($.Scratch.Get "isDisqus") true -}}
-		{{- partial "disqus.html" . -}}
+		<!-- {{- partial "disqus.html" . -}} -->
 		{{- end -}}
 	</div>
 	{{ partial "footer.html" . }}

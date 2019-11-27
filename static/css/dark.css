@@ -55,6 +55,10 @@ a:hover {
 	border-color: #333;
 }
 
+.header nav ul.flat li.active a{
+  background-color: #ff7979;
+}
+
 .highlight {
 	background-color: #333;
 }

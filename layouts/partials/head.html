@@ -13,10 +13,11 @@
 		</nav>
 	</div>
 
+	{{ $current := print "/" (index (split .URL "/") 1)}}
 	<nav class="nav">
 		<ul class="flat">
 			{{ range .Site.Menus.main }}
-			<li>
+			<li {{ if eq $current .URL}} class="active" {{ end }}>
 				<a href="{{ .URL }}">{{ .Name }}</a>
 			</li>
 			{{ end }}
